@@ -1,8 +1,9 @@
 import allure
 from allure_commons.types import Severity
-
-# from data import users
+from data import users
 from pages.main_page import OpenIisPage
+
+test_user = users.test_user
 
 
 @allure.tag('web')
@@ -24,7 +25,7 @@ def test_form_open_iis_step1_positive():
     open_iis.open()
     open_iis.open_form()
     open_iis.should_be_visible_block_only_with_step1()
-    open_iis.fill_contacts()
+    open_iis.fill_contacts(test_user)
     open_iis.click_button_step1()
     open_iis.should_be_visible_block_with_step2()
 
@@ -43,9 +44,9 @@ def test_form_open_iis_step2_positive():
     open_iis = OpenIisPage()
     open_iis.open()
     open_iis.open_form()
-    open_iis.fill_contacts()
+    open_iis.fill_contacts(test_user)
     open_iis.click_button_step1()
-    open_iis.fill_personal_data()
+    open_iis.fill_personal_data(test_user)
     open_iis.click_button_step2()
     open_iis.should_be_visible_block_with_step3()
 
@@ -54,9 +55,9 @@ def test_form_open_iis_step3_positive():
     open_iis = OpenIisPage()
     open_iis.open()
     open_iis.open_form()
-    open_iis.fill_contacts()
+    open_iis.fill_contacts(test_user)
     open_iis.click_button_step1()
-    open_iis.fill_personal_data()
+    open_iis.fill_personal_data(test_user)
     open_iis.click_button_step2()
     open_iis.click_button_step3()
     open_iis.should_be_visible_block_with_step4()

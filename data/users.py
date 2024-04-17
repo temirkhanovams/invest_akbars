@@ -8,51 +8,50 @@ class User:
     middle_name: str
     phone_number: str
     email: str
+    birth_date: str
+    birth_place: str
+    passport_number: str
+    passport_issue_date: str
+    passport_issuer_code: str
+    passport_issuer_title: str
     gender: str
-    year: str
-    month: str
-    day: str
-    subjects: str
-    hobbies: str
-    file: str
-    address: str
-    state: str
-    city: str
-    birthday: str
+    registration_address: str
+    data_option_address: str
+    inn: str
 
 
-admin = User(
-    first_name='admin',
-    last_name='admin',
-    email='blabla@bla.bla',
-    gender='Female',
-    phone='9999999999',
-    year='1992',
-    month='December',
-    day='1',
-    subjects='Maths',
-    hobbies='Reading',
-    file='img.jpg',
-    address='Moscow Leninskiy av. 120',
-    state='NCR',
-    city='Delhi',
-    birthday='01 December,1992',
+test_user = User(
+    last_name='Тестова',
+    first_name='Тест',
+    middle_name ='Тестовна',
+    phone_number='79999999999',
+    email='invest.akbars.qa@gmail.com',
+    birth_date='01 01 2000',
+    birth_place='г. Казань',
+    passport_number='0000 000000',
+    passport_issue_date='01 01 2014',
+    passport_issuer_code='000 000',
+    passport_issuer_title='МВДпо РТ в г. Казань',
+    gender='female',
+    registration_address='г. Казань ул Декабристов 1а',
+    data_option_address=':nth-child(1)',
+    inn='000000000184',
 )
 
-simple_user = User(
-    first_name="Марина",
-    last_name="Темирханова",
-    email='blabla@bla.bla',
-    gender='Female',
-    phone='9999999999',
-    year='1992',
-    month='December',
-    day='1',
-    subjects='Maths',
-    hobbies='Reading',
-    file='img.jpg',
-    address='Moscow Leninskiy av. 120',
-    state='NCR',
-    city='Delhi',
-    birthday='01 December,1992',
+bykova_user = User(
+    last_name='Быкова',
+    first_name='Сафия',
+    middle_name ='Лия',
+    phone_number='79999999999',
+    email='invest.akbars.qa@gmail.com',
+    birth_date='01 01 2000',
+    birth_place='г. Казань',
+    passport_number='0000 000000',
+    passport_issue_date='01 01 2014',
+    passport_issuer_code='000 000',
+    passport_issuer_title='МВДпо РТ в г. Казань',
+    gender='female',
+    registration_address='г. Казань ул Декабристов 1а',
+    data_option_address=':nth-child(1)',
+    inn='000000000184',
 )

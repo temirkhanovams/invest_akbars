@@ -9,37 +9,6 @@ from selenium.webdriver import ChromeOptions
 
 from utils import attach
 
-
-@allure.step('Load env')
-@pytest.fixture(scope='session', autouse=True)
-def load_env():
-    load_dotenv()
-
-
-@pytest.fixture(scope='function', autouse=True)
-def setup_browser(request):
-    browser.config.base_url = 'https://invest.akbars.ru'
-    browser.config.window_width = 1024
-    browser.config.window_height = 780
-    driver_options = webdriver.ChromeOptions()
-
-    driver_options.page_load_strategy = 'eager'
-    browser.config.driver_options = driver_options
-
-    yield browser
-    with allure.step('Add screenshot'):
-        attach.add_screenshot(browser)
-    with allure.step('Add slog'):
-        attach.add_logs(browser)
-    with allure.step('Add HTML'):
-        attach.add_html(browser)
-    with allure.step('Add VIDEO'):
-        attach.add_video(browser)
-
-    browser.quit()
-
-
-'''
 DEFAULT_BROWSER_VERSION = "100.0"
 
 
@@ -78,7 +47,7 @@ def setup_browser(request):
     password = os.getenv('PASSWORD')
 
     driver = webdriver.Remote(command_executor=f"https://{login}:{password}@selenoid.autotests.cloud/wd/hub",
-        options=driver_options)
+                              options=driver_options)
 
     browser.config.driver = driver
 
@@ -93,4 +62,3 @@ def setup_browser(request):
         attach.add_video(browser)
 
     browser.quit()
-'''
