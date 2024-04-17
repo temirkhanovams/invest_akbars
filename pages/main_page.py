@@ -52,11 +52,11 @@ class OpenIisPage:
     @allure.step("Открываем главную страницу сайта https://invest.akbars.ru")
     @allure.link('https://invest.akbars.ru', name='Testing')
     def open(self):
-        return browser.with_(timeout=5).open('/')
+        return browser.open('/')
 
     @allure.step("Нажимаем на кнопку Открыть счёт на главной")
     def open_form(self):
-        self.open_form_selector.click()
+        self.open_form_selector.with_(timeout=5).click()
 
     @allure.step('Проверяем успешность отображения блока с шагом 1')
     def should_be_visible_block_only_with_step1(self):

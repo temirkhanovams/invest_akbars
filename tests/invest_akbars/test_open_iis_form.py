@@ -11,7 +11,7 @@ test_user = users.test_user
 @allure.label('owner', 'TemirkhanovaMS')
 @allure.feature('Запуск тестов через Selenoid')
 @allure.story('story')
-@allure.description('Запуск тестов open_iis на DEMOQA через Selenoid')
+@allure.description('Запуск тестов open_iis на invest.akbars.ru через Selenoid')
 def test_form_open_docs_step1():
     open_iis = OpenIisPage()
     open_iis.open()
