@@ -52,7 +52,7 @@ class OpenIisPage:
     @allure.step("Открываем главную страницу сайта https://invest.akbars.ru")
     @allure.link('https://invest.akbars.ru', name='Testing')
     def open(self):
-        return browser.open('/')
+        return browser.with_(timeout=5).open('/')
 
     @allure.step("Нажимаем на кнопку Открыть счёт на главной")
     def open_form(self):
@@ -110,12 +110,6 @@ class OpenIisPage:
 
     @allure.step('Заполняем шаг 2 - Личные данные')
     def fill_personal_data(self, test_user: User):
-        # with allure.step("Вводим фамилию"):
-        #     self.last_name_selector_step2.should(be.blank).type(test_user.last_name)
-        # with allure.step("Вводим имя"):
-        #     self.first_name_selector_step2.should(be.blank).type(test_user.first_name)
-        # with allure.step("Вводим отчество"):
-        #     self.middle_name_selector_step2.should(be.blank).type(test_user.middle_name)
         with allure.step("Вводим дату рождения"):
             self.birth_date_selector_step2.should(be.blank).type(test_user.birth_date)
         with allure.step("Вводим место рождения"):
@@ -133,10 +127,6 @@ class OpenIisPage:
         with allure.step("Вводим адрес регистрации"):
             self.registration_address_selector_step2.should(be.blank).type(test_user.registration_address)
             self.data_option_address_selector_step2.click()
-        # with allure.step("Вводим номер телефона"):
-        #     self.phone_number_selector_step2.should(be.blank).type(test_user.phone_number)
-        # with allure.step("Заполняем email"):
-        #     self.email_selector_step2.should(be.blank).type(test_user.email)
         with allure.step("Вводим ИНН"):
             self.inn_selector_step2.should(be.blank).type(test_user.inn)
 
