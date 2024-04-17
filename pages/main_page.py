@@ -56,7 +56,7 @@ class OpenIisPage:
 
     @allure.step("Нажимаем на кнопку Открыть счёт на главной")
     def open_form(self):
-        self.open_form_selector.with_(timeout=5).click()
+        self.open_form_selector.click()
 
     @allure.step('Проверяем успешность отображения блока с шагом 1')
     def should_be_visible_block_only_with_step1(self):
