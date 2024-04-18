@@ -105,10 +105,9 @@ allure.bat serve
 
 
 ----
+### ![This is an image](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_report.png) Allure отчет
 
-### <img width="3%" title="Allure report" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_report.png"> Allure отчет
-
-![image](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/Allure_Report_test.png)
+![image_Allure_Report_test](images/Allure_Report_test.png)
 Отчет позволяет получить детальную информацию по всем шагам тестов, включая скриншоты и log - файлы
 
 
@@ -120,9 +119,7 @@ allure.bat serve
 
 ### <img width="3%" title="Allure report" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram.png"> Получение уведомлений о прохождении тестов в Telegram
 
-![image](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram_report_1.png)
-![image](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram_report_3.png)
-
 После завершения сборки специальный Telegram-бот отправляет сообщение с отчетом.
 
-
+![image](/images/telegram_report_1.png)
+![image](/images/telegram_report_2.png)
