@@ -24,18 +24,19 @@
 
 ### Проект реализован с использованием:
 
-<p  align="left">
-<code><img width="5%" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png"></code>
-<code><img width="5%" title="selene" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selene.png"></code>
-<code><img width="5%" title="selenium" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenium.png"></code>
-<code><img width="5%" title="pytest" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/pytest.png"></code>
-<code><img width="5%" title="selenoid" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenoid.png"></code>
-<code><img width="5%" title="jenkins" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/jenkins.png"></code>
-<code><img width="5%" title="allure" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_report.png"></code>
-<code><img width="5%" title="alluretestops" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_testops.png"></code>
-<code><img width="5%" title="github" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/github.png"></code>  
-<code><img width="5%" title="telegram" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram.png"></code>   
-<code><img width="5%" title="pycharm" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/pycharml.png"></code>  
+![python](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png)
+
+<img width="5%" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png">
+<img width="5%" title="selene" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selene.png">
+<img width="5%" title="selenium" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenium.png">
+<img width="5%" title="pytest" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/pytest.png">
+<img width="5%" title="selenoid" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenoid.png">
+<img width="5%" title="jenkins" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/jenkins.png">
+<img width="5%" title="allure" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_report.png">
+<img width="5%" title="alluretestops" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_testops.png">
+<img width="5%" title="github" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/github.png"> 
+<img width="5%" title="telegram" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram.png">  
+<img width="5%" title="pycharm" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/pycharml.png">
 
 
 > Для полноценного прохождения всех тестов необходимо в шаге 4 ввести код, полученный в смс - это ручной тест.
