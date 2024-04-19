@@ -25,8 +25,11 @@
 ### Проект реализован с использованием:
 
 <p align="left">
-<img title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
+<img width="24px" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
 </p>
+
+
+![python](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png)
 ![python](/../main/icons/python.png)
 
 <img width="5%" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
