@@ -24,8 +24,8 @@
 
 ### Проект реализован с использованием:
 
-<p align="center">
-<img width="5%" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
+<p align="left">
+<img title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
 </p>
 ![python](/../main/icons/python.png)
 
