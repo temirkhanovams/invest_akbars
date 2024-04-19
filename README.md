@@ -24,9 +24,9 @@
 
 ### Проект реализован с использованием:
 
-![python](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png)
+![python](/../main/icons/python.png)
 
-<img width="5%" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png">
+<img width="5%" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
 <img width="5%" title="selene" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selene.png">
 <img width="5%" title="selenium" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenium.png">
 <img width="5%" title="pytest" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/pytest.png">
@@ -116,7 +116,7 @@ allure.bat serve
 
 Видеозапись каждого теста генерируется с помощью `Selenoid` после успешного запуска контейнера c тестами в `Docker`.
 
-![image](https://github.com/temirkhanovams/temirkhanovams/tree/main/video/step3.gif)
+![image_gif](https://github.com/temirkhanovams/temirkhanovams/tree/main/video/step3.gif)
 
 ### <img width="3%" title="Allure report" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram.png"> Получение уведомлений о прохождении тестов в Telegram
 
