@@ -24,9 +24,10 @@
 
 ### Проект реализован с использованием:
 
+<image width="24px" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
+
 <p align="left">
-<img width="24px" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
-<img width="24px" title="python" src="../main/icons/python.png" />
+<image width="24px" title="python" src="../main/icons/python.png" />
 </p>
 
 
