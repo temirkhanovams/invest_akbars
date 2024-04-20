@@ -65,7 +65,7 @@
 
 ----
 
-### Локальный запуск
+## Локальный запуск
 Ветка на github: [for_allure_in_local](https://github.com/temirkhanovams/qa_guru_project_homework_15/blob/for_allure_in_local)
 
 1) Скачать проект и открыть в IDE
@@ -102,11 +102,11 @@ allure.bat serve
 
 ----
 
-### ![jenkins](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jenkins.png) Удаленный запуск автотестов  
+## ![jenkins](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jenkins.png) Удаленный запуск автотестов  
 - Выполняется на сервере Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT">Ссылка на проект в Jenkins</a>
 ----
-#### Для запуска автотестов в Jenkins  
+### Для запуска автотестов в Jenkins  
 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT">проект в Jenkins (job)</a>
 2. Выбрать пункт `Build with Parameters`
 3. Выбрать браузер
@@ -115,16 +115,16 @@ allure.bat serve
 5. Нажать кнопку `Build`
 6. Результат запуска сборки можно посмотреть в отчёте Allure  
 ---
-### 1) Проект в Jenkins  
-[Project in Jenkins](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT)
+### Проект в Jenkins  
+[Проект в Jenkins](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT)
 ![Project in Jenkins](/images/jenkins_job.png)
-### 2) Параметры запуска билда в Jenkins  
+### Параметры запуска билда в Jenkins  
 - Либо с параметрами по умолчанию
 - Либо указать свои параметры
 ![Build in Jenkins](/images/jenkins_build_parametrize.png)
 После этого запустится билд, а после его выполнения рядом появятся иконки для просмотра отчётов в Allure и AllureTestOps
 ![image gif](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/video/build_11.gif)
-### 3) ![Allure logo](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png) Allure отчет по автотестам  
+### ![Allure logo](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png) Allure отчет по автотестам  
 [Report in Allure](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT/11/allure/#suites/f060e8ca884180d3ef8856f59eb3c0d5/3ed5e72d9f0c075/)  
 ![image_allure_report](images/allure_report_11.png)  
 ![Report in Allure](/images/allure_report_build_11.png)
