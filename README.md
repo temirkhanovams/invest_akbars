@@ -121,9 +121,12 @@ allure.bat serve
 ### Параметры запуска билда в Jenkins  
 - Либо с параметрами по умолчанию
 - Либо указать свои параметры
-![Build in Jenkins](/images/jenkins_build_parametrize.png)
-После этого запустится билд, а после его выполнения рядом появятся иконки для просмотра отчётов в Allure и AllureTestOps
-![image gif](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/video/build_11.gif)
+
+![Build in Jenkins](/images/jenkins_build_parametrize.png)  
+
+После этого запустится билд, а после его выполнения рядом появятся иконки для просмотра отчётов в Allure и AllureTestOps  
+
+![runnig gif](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/video/build_11.gif)
 ### ![Allure logo](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png) Allure отчет по автотестам  
 [Report in Allure](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT/11/allure/#suites/f060e8ca884180d3ef8856f59eb3c0d5/3ed5e72d9f0c075/)  
 ![image_allure_report](images/allure_report_11.png)  
