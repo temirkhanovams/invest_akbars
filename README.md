@@ -4,9 +4,18 @@
 - ПИФы
 - Доверительное управление
 ----
+
+
 > Открытие инвест-продуктов  
 
 > Пополнение
+
+Главная страница сайта [invest.akbars.ru](https://invest.akbars.ru/)
+![invest.akbars.ru](/images/site_main.png)
+
+Форма для подачи заявки на открытие продукта
+![invest.akbars.ru](/images/open_iis.png) 
+Автотесты и ручные тесты в рамках данного проекта заполняют данную форму по шагам. 
 
 ----
 
@@ -20,37 +29,33 @@
 - [x] в шаге 2 заполнение обязательных полей и переход к следующему шагу
 - [x] в шаге 3 - поля по умолчанию и переход к шагу 4
 
+![image](/images/autotests.png)
 ----
+## Список ручных тестов:
 
+![image](/images/manual_tests.png)
 ### Проект реализован с использованием:
 
-<image width="24px" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
 
-<p align="left">
-<image width="24px" title="python" src="../main/icons/python.png" />
-</p>
-
-
-![python](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png)
-![python](/../main/icons/python.png)
-
-<img width="5%" title="python" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/python.png" />
-<img width="5%" title="selene" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selene.png">
-<img width="5%" title="selenium" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenium.png">
-<img width="5%" title="pytest" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/pytest.png">
-<img width="5%" title="selenoid" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenoid.png">
-<img width="5%" title="jenkins" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/jenkins.png">
-<img width="5%" title="allure" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_report.png">
-<img width="5%" title="alluretestops" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_testops.png">
-<img width="5%" title="github" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/github.png"> 
-<img width="5%" title="telegram" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram.png">  
-<img width="5%" title="pycharm" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/pycharml.png">
+![python](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/python.png)
+![pytest](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pytest.png)
+![pycharml](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pycharm.png)
+![selene](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selene.png)
+![selenium](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selenium.png)
+![selenoid](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selenoid.png)
+![jenkins](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jenkins.png)
+![allure_report](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png)
+![allure_testops](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_testops.png)
+![jira](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jira.png)
+![github](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/github.png)
+![telegram](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png)
+![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)
 
 
 > Для полноценного прохождения всех тестов необходимо в шаге 4 ввести код, полученный в смс - это ручной тест.
 `.env`
 >
-Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`
+Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн PageObject.  
 Библиотека модульного тестирования: `PyTest`  
 `Jenkins` выполняет удаленный запуск тестов в графическом интерфейсе. Установки дополнительных приложений на компьютер
 пользователя не требуется.  
@@ -61,8 +66,12 @@
 ----
 
 ### Локальный запуск
+Ветка на github: [for_allure_in_local](https://github.com/temirkhanovams/qa_guru_project_homework_15/blob/for_allure_in_local)
 
-Необходимо создать файл `.env` и заполнить его актуальными тестовыми параметрами.
+Необходимо создать файл `.env` и заполнить его актуальными тестовыми параметрами:
+
+`LOGIN="***"`  
+`PASSWORD="***"`
 
 1) Скачать проект и открыть в IDE
 2) Для локального запуска необходимо выполнить команду в терминале:
@@ -80,7 +89,7 @@ pytest .\tests\invest_akbars\
 ```commandline
 pytest --clean-alluredir --alluredir=allure-results
 ```
-Сгенерировать allure-отчёт (локальный) - Windows в корне проекта в папке allure-results
+3) Сгенерировать allure-отчёт (локальный) - Windows в корне проекта в папке allure-results
 ```commandline
 allure.bat serve allure-results
 ```
@@ -89,11 +98,11 @@ allure.bat serve allure-results
 allure.bat serve
 ```
 
-Результат: откроется web-страница с отчетом Allure Report
+4) Результат: откроется web-страница с отчетом Allure Report
 
 ----
 
-### <img width="3%" title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg"> Удаленный запуск автотестов выполняется на сервере Jenkins
+### ![jenkins](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jenkins.png) Удаленный запуск автотестов выполняется на сервере Jenkins
 
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT">Ссылка на проект в
 > Jenkins</a>
@@ -114,19 +123,19 @@ allure.bat serve
 
 
 ----
-### ![This is an image](https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/allure_report.png) Allure отчет
+### ![This is an image](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png) Allure отчет
 
 ![image_Allure_Report_test](images/Allure_Report_test.png)
 Отчет позволяет получить детальную информацию по всем шагам тестов, включая скриншоты и log - файлы
 
 
-### <img width="3%" title="Allure report" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/selenoid.png"> Видео прохождения теста:
+### <img width="3%" title="Allure report" src="https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selenoid.png"> Видео прохождения теста:
 
 Видеозапись каждого теста генерируется с помощью `Selenoid` после успешного запуска контейнера c тестами в `Docker`.
 
-![image_gif](https://github.com/temirkhanovams/temirkhanovams/tree/main/video/step3.gif)
+![image_gif](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/video/Step3.gif)
 
-### <img width="3%" title="Allure report" src="https://github.com/temirkhanovams/temirkhanovams/tree/main/icons/telegram.png"> Получение уведомлений о прохождении тестов в Telegram
+### <img width="3%" title="Allure report" src="https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png"> Получение уведомлений о прохождении тестов в Telegram
 
 После завершения сборки специальный Telegram-бот отправляет сообщение с отчетом.
 
