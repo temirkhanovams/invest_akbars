@@ -16,11 +16,10 @@ class User:
     passport_issuer_title: str
     gender: str
     registration_address: str
-    data_option_address: str
     inn: str
 
 
-test_user = User(
+user_test = User(
     last_name='Тестова',
     first_name='Тест',
     middle_name ='Тестовна',
@@ -34,7 +33,23 @@ test_user = User(
     passport_issuer_title='МВДпо РТ в г. Казань',
     gender='female',
     registration_address='г. Казань ул Декабристов 1а',
-    data_option_address=':nth-child(1)',
+    inn='000000000184',
+)
+
+user_empty = User(
+    last_name='',
+    first_name='',
+    middle_name ='',
+    phone_number='',
+    email='',
+    birth_date='01 01 2000',
+    birth_place='г. Казань',
+    passport_number='0000 000000',
+    passport_issue_date='01 01 2014',
+    passport_issuer_code='000 000',
+    passport_issuer_title='МВДпо РТ в г. Казань',
+    gender='female',
+    registration_address='г. Казань ул Декабристов 1а',
     inn='000000000184',
 )
 
@@ -52,6 +67,5 @@ bykova_user = User(
     passport_issuer_title='МВДпо РТ в г. Казань',
     gender='female',
     registration_address='г. Казань ул Декабристов 1а',
-    data_option_address=':nth-child(1)',
     inn='000000000184',
 )

@@ -1,9 +1,10 @@
 import allure
 from allure_commons.types import Severity
 from data import users
-from pages.main_page import OpenIisPage
+from pages.open_iis_page import OpenIisPage
 
-test_user = users.test_user
+user_test = users.user_test
+user_empty = users.user_empty
 
 
 @allure.tag('web')
@@ -11,53 +12,53 @@ test_user = users.test_user
 @allure.label('owner', 'TemirkhanovaMS')
 @allure.feature('Запуск тестов через Selenoid')
 @allure.story('story')
-@allure.description('Запуск тестов open_iis на invest.akbars.ru через Selenoid')
+@allure.description('Запуск тестов open_iis через Selenoid')
 def test_form_open_docs_step1():
     open_iis = OpenIisPage()
-    open_iis.open()
+    open_iis.open_browser()
     open_iis.open_form()
-    open_iis.should_be_visible_block_only_with_step1()
-    open_iis.open_pd_agreement_and_recipient_info()
+    open_iis.should_be_visible_block_with_step1()
+    open_iis.open_docs_in_step1()
 
 
 def test_form_open_iis_step1_positive():
     open_iis = OpenIisPage()
-    open_iis.open()
+    open_iis.open_browser()
     open_iis.open_form()
-    open_iis.should_be_visible_block_only_with_step1()
-    open_iis.fill_contacts(test_user)
+    open_iis.should_be_visible_block_with_step1()
+    open_iis.fill_contacts(user_test)
     open_iis.click_button_step1()
     open_iis.should_be_visible_block_with_step2()
 
 
 def test_form_open_iis_step1_negative():
     open_iis = OpenIisPage()
-    open_iis.open()
+    open_iis.open_browser()
     open_iis.open_form()
-    open_iis.should_be_visible_block_only_with_step1()
-    open_iis.fill_contacts_all_fields_are_empty()
+    open_iis.should_be_visible_block_with_step1()
+    open_iis.fill_contacts_all_empty(user_empty)
     open_iis.click_button_step1()
-    open_iis.should_be_visible_block_only_with_step1()
+    open_iis.should_be_visible_block_with_step1()
 
 
 def test_form_open_iis_step2_positive():
     open_iis = OpenIisPage()
-    open_iis.open()
+    open_iis.open_browser()
     open_iis.open_form()
-    open_iis.fill_contacts(test_user)
+    open_iis.fill_contacts(user_test)
     open_iis.click_button_step1()
-    open_iis.fill_personal_data(test_user)
+    open_iis.fill_personal_data(user_test)
     open_iis.click_button_step2()
     open_iis.should_be_visible_block_with_step3()
 
 
 def test_form_open_iis_step3_positive():
     open_iis = OpenIisPage()
-    open_iis.open()
+    open_iis.open_browser()
     open_iis.open_form()
-    open_iis.fill_contacts(test_user)
+    open_iis.fill_contacts(user_test)
     open_iis.click_button_step1()
-    open_iis.fill_personal_data(test_user)
+    open_iis.fill_personal_data(user_test)
     open_iis.click_button_step2()
     open_iis.click_button_step3()
     open_iis.should_be_visible_block_with_step4()
