@@ -137,7 +137,7 @@ class OpenIisPage:
     @allure.step('Нажимаем на кнопку Продолжить - в шаге 3')
     def click_button_step3(self):
         with allure.step('Кнопка Продолжить в шаге 3'):
-            self.button_step3_selector.click()
+            self.button_step3_selector.with_(timeout=7).click()
 
     def should_be_visible_block_with_step4(self):
-        self.block_with_step4_selector.should(be.visible)
+        self.block_with_step4_selector.with_(timeout=7).should(be.visible)
