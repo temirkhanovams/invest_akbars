@@ -51,8 +51,8 @@ class OpenIisPage:
 
     @allure.step("Открываем главную страницу сайта ")
     @allure.link('https://invest.akbars.ru', name='Testing')
-    def open_browser(self):
-        return browser.open_browser('/')
+    def open(self):
+        return browser.open('/')
 
     @allure.step("Нажимаем на кнопку Открыть счёт на главной")
     def open_form(self):

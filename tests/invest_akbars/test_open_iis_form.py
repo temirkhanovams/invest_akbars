@@ -15,7 +15,7 @@ user_empty = users.user_empty
 @allure.description('Запуск тестов open_iis через Selenoid')
 def test_form_open_docs_step1():
     open_iis = OpenIisPage()
-    open_iis.open_browser()
+    open_iis.open()
     open_iis.open_form()
     open_iis.should_be_visible_block_with_step1()
     open_iis.open_docs_in_step1()
@@ -23,7 +23,7 @@ def test_form_open_docs_step1():
 
 def test_form_open_iis_step1_positive():
     open_iis = OpenIisPage()
-    open_iis.open_browser()
+    open_iis.open()
     open_iis.open_form()
     open_iis.should_be_visible_block_with_step1()
     open_iis.fill_contacts(user_test)
@@ -33,7 +33,7 @@ def test_form_open_iis_step1_positive():
 
 def test_form_open_iis_step1_negative():
     open_iis = OpenIisPage()
-    open_iis.open_browser()
+    open_iis.open()
     open_iis.open_form()
     open_iis.should_be_visible_block_with_step1()
     open_iis.fill_contacts_all_empty(user_empty)
@@ -43,7 +43,7 @@ def test_form_open_iis_step1_negative():
 
 def test_form_open_iis_step2_positive():
     open_iis = OpenIisPage()
-    open_iis.open_browser()
+    open_iis.open()
     open_iis.open_form()
     open_iis.fill_contacts(user_test)
     open_iis.click_button_step1()
@@ -54,7 +54,7 @@ def test_form_open_iis_step2_positive():
 
 def test_form_open_iis_step3_positive():
     open_iis = OpenIisPage()
-    open_iis.open_browser()
+    open_iis.open()
     open_iis.open_form()
     open_iis.fill_contacts(user_test)
     open_iis.click_button_step1()
