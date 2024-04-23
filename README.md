@@ -25,7 +25,7 @@
 ![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)  
 
 ___
->Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
+> Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
 Библиотека модульного тестирования: `PyTest`  
 `Jenkins` выполняет удаленный запуск тестов в графическом интерфейсе. Установки дополнительных приложений на компьютер
 пользователя не требуется.  
