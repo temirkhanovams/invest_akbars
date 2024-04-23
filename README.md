@@ -8,7 +8,7 @@
 3) Выбор продукта
 4) Подписание документов
 
-### Проект реализован с использованием:  
+## Проект реализован с использованием:  
 
 ![python](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/python.png)
 ![pytest](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pytest.png)
