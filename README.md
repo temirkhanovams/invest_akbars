@@ -1,13 +1,14 @@
 # Проект по тестированию сайта [invest.akbars.ru](https://invest.akbars.ru/)
-- ИИС, БС, ПИФы и Доверительное управление
+> ИИС, БС, ПИФы и Доверительное управление
 ----
-В данном проекте реализованы автотесты и ручные тесты, которые заполняют форму открытия счёта.  
+В проекте реализованы автотесты и ручные тесты, которые заполняют форму открытия счёта.  
 Данная форма состоит из 4 шагов:
 1) Контактные данные
 2) Личные данные
 3) Выбор продукта
 4) Подписание документов
-### Проект реализован с использованием:
+
+### Проект реализован с использованием:  
 
 ![python](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/python.png)
 ![pytest](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pytest.png)
@@ -23,7 +24,7 @@
 ![telegram](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png)
 ![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)
 
-Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
+>Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
 Библиотека модульного тестирования: `PyTest`  
 `Jenkins` выполняет удаленный запуск тестов в графическом интерфейсе. Установки дополнительных приложений на компьютер
 пользователя не требуется.  
@@ -38,23 +39,23 @@
 ![image_allure_report](images/allure_report_invest_03.png)  
 ![Report in Allure](/images/allure_report_tests_invest_03.png)
 
-Отчет позволяет получить детальную информацию по всем шагам тестов, включая скриншоты и log - файлы
+> Отчет позволяет получить детальную информацию по всем шагам тестов, включая скриншоты и log - файлы
 
 #### <img width="3%" title="Allure report" src="https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selenoid.png"> Видео прохождения теста:
 
-Видеозапись каждого теста генерируется с помощью `Selenoid` после успешного запуска тестов.
+>Видеозапись каждого теста генерируется с помощью `Selenoid` после успешного запуска тестов.
 
 ![image_gif](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/video/Step3.gif)
 
 ### <img width="3%" title="Allure report" src="https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png"> Получение уведомлений о прохождении тестов в Telegram
 
-После завершения сборки специальный Telegram-бот отправляет сообщение с отчетом.
+> После завершения сборки специальный Telegram-бот отправляет сообщение с отчетом.
 
 ![telegram_report_10](./images/telegram_report_invest_03.png)
 
 ### <img width="3%" title="Allure report" src="https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_testops.png"> Интеграция с Allure TestOps
 [Dashboards AllureTestOps](https://allure.autotests.cloud/project/4179/dashboards)  
-Так же вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики.  
+> Так же вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики.  
 
 ![Dashboards AllureTestOps](./images/allure_testops_dashboards_invest_03.png) 
 
@@ -84,7 +85,7 @@ TestOps также позволяет:
 Настроив через `Allure TestOps` интеграцию с `Jira`, [в задаче](https://jira.autotests.cloud/browse/HOMEWORK-1192) можно интегрировать результаты прохождения тестов и список тест-кейсов из `AllureTestOps`.  
 А также после прохождения ручных и автотестов создать Release в `AllureTestOps`, и интегрировать его результаты тоже.  
 
-В задаче Jira - результаты прохождения тест-ранов из AllureTestOps, а также список тестов, относящихся к данной задаче.
+> В задаче Jira интегрированы результаты прохождения тест-ранов из `AllureTestOps`, а также список тестов, относящихся к данной задаче.
 
 ![Dashboards AllureTestOps](./images/jira_testops_integration.png) 
 
