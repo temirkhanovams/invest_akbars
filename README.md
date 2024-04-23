@@ -1,7 +1,8 @@
 # Проект по тестированию сайта [invest.akbars.ru](https://invest.akbars.ru/)
 > ИИС, БС, ПИФы и Доверительное управление
-----
+___
 В проекте реализованы автотесты и ручные тесты, которые заполняют форму открытия счёта.  
+
 Данная форма состоит из 4 шагов:
 1) Контактные данные
 2) Личные данные
@@ -24,6 +25,7 @@
 ![telegram](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png)
 ![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)  
 
+---
 ___
 Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
 Библиотека модульного тестирования: `PyTest`  
