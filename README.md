@@ -22,8 +22,9 @@
 ![jira](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jira.png)
 ![github](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/github.png)
 ![telegram](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png)
-![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)
+![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)  
 
+___
 >Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
 Библиотека модульного тестирования: `PyTest`  
 `Jenkins` выполняет удаленный запуск тестов в графическом интерфейсе. Установки дополнительных приложений на компьютер
@@ -32,7 +33,6 @@
 Фреймворк `Allure Report` собирает графический отчет о прохождении тестов  
 После завершения тестов `Telegram Bot` отправляет в `Telegram` краткий вариант `Allure Report`
 ----
-
 
 ### ![Allure logo](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png) Allure отчет по автотестам  
 [Report in Allure](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT/11/allure/#suites/f060e8ca884180d3ef8856f59eb3c0d5/3ed5e72d9f0c075/)  
