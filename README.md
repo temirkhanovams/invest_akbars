@@ -1,8 +1,6 @@
-# Проект по тестированию сайта [invest.akbars.ru](https://invest.akbars.ru/) - цифровые инвестиционные продукты  
+# Проект по тестированию сайта [invest.akbars.ru](https://invest.akbars.ru/)
 - ИИС, БС, ПИФы и Доверительное управление
 ----
-Главная страница сайта [invest.akbars.ru](https://invest.akbars.ru/)
-
 В данном проекте реализованы автотесты и ручные тесты, которые заполняют форму открытия счёта.  
 Данная форма состоит из 4 шагов:
 1) Контактные данные
@@ -37,8 +35,8 @@
 
 ### ![Allure logo](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png) Allure отчет по автотестам  
 [Report in Allure](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT/11/allure/#suites/f060e8ca884180d3ef8856f59eb3c0d5/3ed5e72d9f0c075/)  
-![image_allure_report](images/allure_report_11.png)  
-![Report in Allure](/images/allure_report_build_11.png)
+![image_allure_report](images/allure_report_invest_03.png)  
+![Report in Allure](/images/allure_report_tests_invest_03.png)
 
 Отчет позволяет получить детальную информацию по всем шагам тестов, включая скриншоты и log - файлы
 
@@ -52,65 +50,71 @@
 
 После завершения сборки специальный Telegram-бот отправляет сообщение с отчетом.
 
-![telegram_report_10](/images/telegram_report_10.png)
+![telegram_report_10](./images/telegram_report_invest_03.png)
 
 ### <img width="3%" title="Allure report" src="https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_testops.png"> Интеграция с Allure TestOps
 [Dashboards AllureTestOps](https://allure.autotests.cloud/project/4179/dashboards)  
 Так же вся отчетность сохраняется в Allure TestOps, где строятся аналогичные графики.  
 
-![Dashboards AllureTestOps](/images/allure_testops_dashboards.png) 
+![Dashboards AllureTestOps](./images/allure_testops_dashboards_invest_03.png) 
 
 TestOps также позволяет:
 - Добавлять к [Suite AllureTestOps](https://allure.autotests.cloud/project/4179/test-cases?treeId=8184)   ручные тесты 
 - Управлять всеми тест-кейсами или с каждым отдельно
 - Перезапускать каждый тест отдельно от всех тестов
 - Настроить интеграцию с Jira и др.  
-![allure_testops_suites](/images/allure_testops_suites.png) 
+
+Автотесты, которые подтянулись в `AllureTestOps` из `Jenkins`. И ручные тесты, которые созданы в самом `Allure TestOps`  
+
+![allure_testops_suites](./images/allure_testops_suite_invest.png) 
+
+[Тест-раны в AllureTestOps](https://allure.autotests.cloud/project/4179/launches)
+- Здесь видим ран, который был запущен через Jenkins. Он с автотестами `invest_akbars_ru - #3`
+- И Run с автотестами и ручными тестами `release_004`, который был собран вручную в `AllureTestOps`. 
+
+![Dashboards AllureTestOps](./images/allure_testops_runs_invest.png) 
+
+`AllureTestOps`, будучи системой управления тестами, позволяет запускать тест-раны, и выполнять всевозможные манипуляции с ручными тестами.  
+![AllureTestOps running](./images/allure_testops_running.png) 
+
 ---
 
 ### <img width="3%" title="Allure report" src="https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jira.png"> Интеграция с Jira
 [Jira issue](https://jira.autotests.cloud/browse/HOMEWORK-1192)  
-Настроив через Allure TestOps интеграцию с Jira, [в задаче](https://jira.autotests.cloud/browse/HOMEWORK-1192) можно интегрировать результаты прохождения тестов и список тест-кейсов из AllureTestOps.  
-А также после прохождения ручных и автотестов создать Release в AllureTestOps, и интегрировать его результаты тоже.  
-
-[Тест-раны в AllureTestOps](https://allure.autotests.cloud/project/4179/launches)
-- Здесь видим ран, который был запущен через Jenkins. Он с автотестами `C10_Marina_t_s_unut15_MY_PROJECT - #11`
-- И Run с автотестами и ручными тестами `Release_003`, который был собран вручную в AllureTestOps. 
-
-AllureTestOps, будучи системой управления тестами, позволяет запускать автотесты, и выполнять всевозможные манипуляции с ручными тестами.
-![Dashboards AllureTestOps](/images/allure_testops_runs.png) 
+Настроив через `Allure TestOps` интеграцию с `Jira`, [в задаче](https://jira.autotests.cloud/browse/HOMEWORK-1192) можно интегрировать результаты прохождения тестов и список тест-кейсов из `AllureTestOps`.  
+А также после прохождения ручных и автотестов создать Release в `AllureTestOps`, и интегрировать его результаты тоже.  
 
 В задаче Jira - результаты прохождения тест-ранов из AllureTestOps, а также список тестов, относящихся к данной задаче.
 
-![Dashboards AllureTestOps](/images/jira_vs_allure_integration.png) 
+![Dashboards AllureTestOps](./images/jira_testops_integration.png) 
 
 ----
 
 ## ![jenkins](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jenkins.png) Удаленный запуск автотестов  
 - Выполняется на сервере Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT">Ссылка на проект в Jenkins</a>
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/invest_akbars_ru/">Ссылка на проект в Jenkins</a>
 ----
 ### Для запуска автотестов в Jenkins  
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT">проект в Jenkins (job)</a>
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/invest_akbars_ru/">проект в Jenkins (job)</a>
 2. Выбрать пункт `Build with Parameters`
 3. Выбрать браузер
 4. Выбрать версию браузера
-4. Указать комментарий для уведомления в Телеграмм
-5. Нажать кнопку `Build`
-6. Результат запуска сборки можно посмотреть в отчёте Allure  
+5. Указать комментарий для уведомления в Телеграмм
+6. Нажать кнопку `Build`
+7. Результат запуска сборки можно посмотреть в отчёте Allure  
 ---
 ### Проект в Jenkins  
-[Проект в Jenkins](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT)
-![Project in Jenkins](/images/jenkins_job.png)
+[Проект в Jenkins](https://jenkins.autotests.cloud/job/invest_akbars_ru/)
+![Project in Jenkins](./images/jenkins_job_invest.png)
 ### Параметры запуска билда в Jenkins  
 - Либо с параметрами по умолчанию
 - Либо указать свои параметры
 
-![Build in Jenkins](/images/jenkins_build_parametrize.png)  
+![Build in Jenkins](./images/jenkins_build_parametrize_invest.png)  
 
 После этого запустится билд, а после его выполнения рядом появятся иконки для просмотра отчётов в Allure и AllureTestOps  
 
-![runnig gif](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/video/build_11.gif)
+![runnig gif](./video/build_3.gif)
 
 
 ----
