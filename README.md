@@ -1,6 +1,6 @@
 # Проект по тестированию сайта [invest.akbars.ru](https://invest.akbars.ru/)
 > ИИС, БС, ПИФы и Доверительное управление
-___
+---
 В проекте реализованы автотесты и ручные тесты, которые заполняют форму открытия счёта.  
 
 Данная форма состоит из 4 шагов:
@@ -8,9 +8,10 @@ ___
 2) Личные данные
 3) Выбор продукта
 4) Подписание документов
-___
+---
 ## Проект реализован с использованием:  
-___
+
+
 ![python](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/python.png)
 ![pytest](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pytest.png)
 ![pycharml](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pycharm.png)
@@ -24,7 +25,10 @@ ___
 ![github](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/github.png)
 ![telegram](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png)
 ![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)
-___
+
+
+---  
+
 Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
 Библиотека модульного тестирования: `PyTest`  
 `Jenkins` выполняет удаленный запуск тестов в графическом интерфейсе. Установки дополнительных приложений на компьютер
