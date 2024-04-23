@@ -8,9 +8,9 @@ ___
 2) Личные данные
 3) Выбор продукта
 4) Подписание документов
-
+___
 ## Проект реализован с использованием:  
-
+___
 ![python](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/python.png)
 ![pytest](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pytest.png)
 ![pycharml](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pycharm.png)
@@ -23,9 +23,7 @@ ___
 ![jira](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jira.png)
 ![github](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/github.png)
 ![telegram](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png)
-![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)  
-
----
+![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)
 ___
 Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
 Библиотека модульного тестирования: `PyTest`  
