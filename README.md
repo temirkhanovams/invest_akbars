@@ -16,8 +16,6 @@
 
 ![python](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/python.png)![pytest](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pytest.png)![pycharml](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/pycharm.png)![selene](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selene.png)![selenium](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selenium.png)![selenoid](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/selenoid.png)![jenkins](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jenkins.png)![allure_report](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png)![allure_testops](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_testops.png)![jira](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/jira.png)![github](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/github.png)![telegram](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/telegram.png)![git](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/git.png)
 
----  
-
 Для написания UI-тестов используется фреймворк `Selene`, современная «обёртка» вокруг `Selenium WebDriver`, паттерн `PageObject`.  
 Библиотека модульного тестирования: `PyTest`  
 `Jenkins` выполняет удаленный запуск тестов в графическом интерфейсе. Установки дополнительных приложений на компьютер
