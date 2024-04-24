@@ -26,7 +26,7 @@
 ----
 
 ### ![Allure logo](https://raw.githubusercontent.com/temirkhanovams/temirkhanovams/main/icons/allure_report.png) Allure отчет по автотестам  
-[Report in Allure](https://jenkins.autotests.cloud/job/C10_Marina_t_s_unut15_MY_PROJECT/11/allure/#suites/f060e8ca884180d3ef8856f59eb3c0d5/3ed5e72d9f0c075/)  
+[Report in Allure](https://jenkins.autotests.cloud/job/invest_akbars_ru/3/allure/#)  
 ![image_allure_report](images/allure_report_invest_03.png)  
 ![Report in Allure](/images/allure_report_tests_invest_03.png)
 
